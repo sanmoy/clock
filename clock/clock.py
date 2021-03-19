@@ -40,6 +40,15 @@ def animation(device, from_y, to_y):
             text(draw, (18, current_y), mintime, fill="white", font=proportional(BENGALI_FONT))
         time.sleep(0.1)
         current_y += 1 if to_y > from_y else -1
+        
+
+def test_font():
+    serial = spi(port=0, device=0, gpio=noop())
+    device = max7219(serial, cascaded=4, block_orientation=-90, blocks_arranged_in_reverse_order=False)
+    device.contrast(1)
+    with canvas(device) as draw:
+        text(draw, (0, 0), "1234", fill="white", font=proportional(BENGALI_FONT))
+    time.sleep(100)
 
 
 def main():
