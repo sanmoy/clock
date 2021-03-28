@@ -1,5 +1,5 @@
 # Native Language Clock
-Build a digital clock in your native language. 
+Build a digital clock in your native language using Raspberry Pi Zero W and MAX7219 Display. 
 
 Detailed instruction here -> https://sanmoy.medium.com/digital-clock-in-your-native-language-dc787645cae9
 
